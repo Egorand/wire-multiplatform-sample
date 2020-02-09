@@ -19,6 +19,7 @@ buildscript {
   ext.versions = [
       'kotlin': '1.3.61',
       'wire': '3.0.3',
+      'okio': '2.4.3',
       'ktor': '1.2.6',
       'retrofit': '2.7.0',
       'coroutines': '1.3.3',
@@ -41,6 +42,9 @@ buildscript {
           'runtime': "com.squareup.wire:wire-runtime-multiplatform:${versions.wire}",
           'gradlePlugin': "com.squareup.wire:wire-gradle-plugin:${versions.wire}",
           'compiler': "com.squareup.wire:wire-compiler:${versions.wire}",
+      ],
+      'okio': [
+          'multiplatform': "com.squareup.okio:okio-multiplatform:${versions.okio}",
       ],
       'ktor': [
           'netty': "io.ktor:ktor-server-netty:${versions.ktor}",

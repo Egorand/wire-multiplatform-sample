@@ -43,6 +43,7 @@ kotlin {
     commonMain {
       dependencies {
         api deps.kotlin.stdlib.common
+        api deps.okio.multiplatform
         api deps.wire.runtime
       }
     }
@@ -54,3 +55,29 @@ wire {
     out 'src/commonMain/kotlin'
   }
 }
+
+def packForXcode = tasks.register("packForXcode", Sync) {
+  def targetDir = new File(buildDir, "xcode-frameworks")
+
+  // Select the right configuration for the iOS framework depending on the environment
+  // variables set by Xcode build.
+  def mode = System.getenv("CONFIGURATION")
+  if (mode == null) mode = "DEBUG"
+  def framework = kotlin.targets.getByName("ios").binaries.getFramework(mode)
+
+  from framework.outputDirectory
+  into targetDir
+
+  doLast {
+    // Generate a helpful ./gradlew wrapper with embedded Java path.
+    def gradlew = new File(targetDir, "gradlew")
+    gradlew.executable = true
+    gradlew.text = """
+# !/bin/bash
+export 'JAVA_HOME=${System.getProperty("java.home")}'
+cd '${rootProject.rootDir}'
+./gradlew \$@
+"""
+  }
+}
+tasks.getByName("assemble").finalizedBy(packForXcode)

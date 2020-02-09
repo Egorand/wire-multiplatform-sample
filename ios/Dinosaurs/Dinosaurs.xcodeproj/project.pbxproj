@@ -11,12 +11,12 @@
 		742585F22396A37600D34642 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742585F12396A37600D34642 /* SceneDelegate.swift */; };
 		742585F92396A37A00D34642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742585F82396A37A00D34642 /* Assets.xcassets */; };
 		742586092397C51700D34642 /* protos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742586042397C07900D34642 /* protos.framework */; };
-		7425860A2397C51700D34642 /* protos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 742586042397C07900D34642 /* protos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		742FD5F223B1651F00D4F91A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742FD5F123B1651F00D4F91A /* SwiftUI.framework */; };
 		742FD5F423B1653600D4F91A /* DinosaurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5F323B1653600D4F91A /* DinosaurView.swift */; };
 		742FD5F723B1662C00D4F91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742FD5F523B1662C00D4F91A /* LaunchScreen.storyboard */; };
 		742FD5FA23B16B4D00D4F91A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5F923B16B4D00D4F91A /* ContentView.swift */; };
 		742FD60023B1914C00D4F91A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5FF23B1914C00D4F91A /* Resource.swift */; };
+		748516E223EF883E00D30BB0 /* protos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 748516E123EF883E00D30BB0 /* protos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7425860A2397C51700D34642 /* protos.framework in Embed Frameworks */,
+				748516E223EF883E00D30BB0 /* protos.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +45,7 @@
 		742FD5F523B1662C00D4F91A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		742FD5F923B16B4D00D4F91A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		742FD5FF23B1914C00D4F91A /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		748516E123EF883E00D30BB0 /* protos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = protos.framework; path = "../../protos/build/xcode-frameworks/protos.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		742585E32396A37600D34642 = {
 			isa = PBXGroup;
 			children = (
+				748516E123EF883E00D30BB0 /* protos.framework */,
 				742585EE2396A37600D34642 /* Dinosaurs */,
 				742585ED2396A37600D34642 /* Products */,
 				742586032397C07900D34642 /* Frameworks */,
