@@ -1,0 +1,24 @@
+# IDEA
+.idea
+*.iml
+classes
+
+# Eclipse
+.classpath
+.project
+
+out/
+
+# Gradle
+.gradle
+build
+generated
+
+# Maven
+plugin*.xml
+
+# Special Mkdocs files
+docs/3.x
+docs/changelog.md
+docs/contributing.md
+docs/index.md
