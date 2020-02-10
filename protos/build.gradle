@@ -41,6 +41,7 @@ kotlin {
   }
   sourceSets {
     commonMain {
+      kotlin.srcDir("$buildDir/generated/source/wire")
       dependencies {
         api deps.kotlin.stdlib.common
         api deps.okio.multiplatform
@@ -51,9 +52,7 @@ kotlin {
 }
 
 wire {
-  kotlin {
-    out 'src/commonMain/kotlin'
-  }
+  kotlin {}
 }
 
 def packForXcode = tasks.register("packForXcode", Sync) {
