@@ -1,0 +1,16 @@
+PODS:
+  - protos (0.0.1)
+
+DEPENDENCIES:
+  - protos (from `../../protos`)
+
+EXTERNAL SOURCES:
+  protos:
+    :path: "../../protos"
+
+SPEC CHECKSUMS:
+  protos: af5057e8123f0987aa994bfb68f1fb8afeeab8a3
+
+PODFILE CHECKSUM: 35b6eec2fee51651b5c41082d7054d9456bc7081
+
+COCOAPODS: 1.8.4
