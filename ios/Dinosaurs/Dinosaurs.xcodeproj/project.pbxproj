@@ -7,114 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		742585F02396A37600D34642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742585EF2396A37600D34642 /* AppDelegate.swift */; };
-		742585F22396A37600D34642 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742585F12396A37600D34642 /* SceneDelegate.swift */; };
-		742585F92396A37A00D34642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742585F82396A37A00D34642 /* Assets.xcassets */; };
-		742586092397C51700D34642 /* protos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742586042397C07900D34642 /* protos.framework */; };
-		742FD5F223B1651F00D4F91A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742FD5F123B1651F00D4F91A /* SwiftUI.framework */; };
-		742FD5F423B1653600D4F91A /* DinosaurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5F323B1653600D4F91A /* DinosaurView.swift */; };
-		742FD5F723B1662C00D4F91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742FD5F523B1662C00D4F91A /* LaunchScreen.storyboard */; };
-		742FD5FA23B16B4D00D4F91A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5F923B16B4D00D4F91A /* ContentView.swift */; };
-		742FD60023B1914C00D4F91A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FD5FF23B1914C00D4F91A /* Resource.swift */; };
-		748516E223EF883E00D30BB0 /* protos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 748516E123EF883E00D30BB0 /* protos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		741F4CF623F48DC20074529F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F4CF523F48DC20074529F /* AppDelegate.swift */; };
+		741F4CF823F48DC20074529F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F4CF723F48DC20074529F /* SceneDelegate.swift */; };
+		741F4CFF23F48DC30074529F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F4CFE23F48DC30074529F /* Assets.xcassets */; };
+		741F4D0223F48DC30074529F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F4D0023F48DC30074529F /* LaunchScreen.storyboard */; };
+		746CEEBA23F48E1B008381B1 /* DinosaurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEB923F48E1B008381B1 /* DinosaurView.swift */; };
+		746CEEBC23F48E5E008381B1 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEBB23F48E5E008381B1 /* Resource.swift */; };
+		746CEEBE23F48E96008381B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEBD23F48E96008381B1 /* ContentView.swift */; };
+		AD7D9ED17E7E2E8F6A01DC92 /* Pods_Dinosaurs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF928F67651422E95DFC782 /* Pods_Dinosaurs.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7425860B2397C51800D34642 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				748516E223EF883E00D30BB0 /* protos.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		742585EC2396A37600D34642 /* Dinosaurs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dinosaurs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		742585EF2396A37600D34642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		742585F12396A37600D34642 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		742585F82396A37A00D34642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		742585FD2396A37A00D34642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		742586042397C07900D34642 /* protos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = protos.framework; path = "../../protos/build/xcode-frameworks/protos.framework"; sourceTree = "<group>"; };
-		742FD5F123B1651F00D4F91A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		742FD5F323B1653600D4F91A /* DinosaurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurView.swift; sourceTree = "<group>"; };
-		742FD5F523B1662C00D4F91A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		742FD5F923B16B4D00D4F91A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		742FD5FF23B1914C00D4F91A /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		748516E123EF883E00D30BB0 /* protos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = protos.framework; path = "../../protos/build/xcode-frameworks/protos.framework"; sourceTree = "<group>"; };
+		741F4CF223F48DC20074529F /* Dinosaurs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dinosaurs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		741F4CF523F48DC20074529F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		741F4CF723F48DC20074529F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		741F4CFE23F48DC30074529F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		741F4D0123F48DC30074529F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		741F4D0323F48DC30074529F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746CEEB923F48E1B008381B1 /* DinosaurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurView.swift; sourceTree = "<group>"; };
+		746CEEBB23F48E5E008381B1 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		746CEEBD23F48E96008381B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BF928F67651422E95DFC782 /* Pods_Dinosaurs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dinosaurs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E44CA8B772EE4AC2ED5A30 /* Pods-Dinosaurs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dinosaurs.debug.xcconfig"; path = "Target Support Files/Pods-Dinosaurs/Pods-Dinosaurs.debug.xcconfig"; sourceTree = "<group>"; };
+		FD85FE44C1A07AB2DF50B7F3 /* Pods-Dinosaurs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dinosaurs.release.xcconfig"; path = "Target Support Files/Pods-Dinosaurs/Pods-Dinosaurs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		742585E92396A37600D34642 /* Frameworks */ = {
+		741F4CEF23F48DC20074529F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742FD5F223B1651F00D4F91A /* SwiftUI.framework in Frameworks */,
-				742586092397C51700D34642 /* protos.framework in Frameworks */,
+				AD7D9ED17E7E2E8F6A01DC92 /* Pods_Dinosaurs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		742585E32396A37600D34642 = {
+		45E9FAF691082EA876C359CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				748516E123EF883E00D30BB0 /* protos.framework */,
-				742585EE2396A37600D34642 /* Dinosaurs */,
-				742585ED2396A37600D34642 /* Products */,
-				742586032397C07900D34642 /* Frameworks */,
+				7BF928F67651422E95DFC782 /* Pods_Dinosaurs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		741F4CE923F48DC20074529F = {
+			isa = PBXGroup;
+			children = (
+				741F4CF423F48DC20074529F /* Dinosaurs */,
+				741F4CF323F48DC20074529F /* Products */,
+				F7E4839CBC51485B1DCF8686 /* Pods */,
+				45E9FAF691082EA876C359CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		742585ED2396A37600D34642 /* Products */ = {
+		741F4CF323F48DC20074529F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				742585EC2396A37600D34642 /* Dinosaurs.app */,
+				741F4CF223F48DC20074529F /* Dinosaurs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		742585EE2396A37600D34642 /* Dinosaurs */ = {
+		741F4CF423F48DC20074529F /* Dinosaurs */ = {
 			isa = PBXGroup;
 			children = (
-				742FD5F523B1662C00D4F91A /* LaunchScreen.storyboard */,
-				742585EF2396A37600D34642 /* AppDelegate.swift */,
-				742585F12396A37600D34642 /* SceneDelegate.swift */,
-				742FD5F923B16B4D00D4F91A /* ContentView.swift */,
-				742585F82396A37A00D34642 /* Assets.xcassets */,
-				742585FD2396A37A00D34642 /* Info.plist */,
-				742FD5F323B1653600D4F91A /* DinosaurView.swift */,
-				742FD5FF23B1914C00D4F91A /* Resource.swift */,
+				741F4CF523F48DC20074529F /* AppDelegate.swift */,
+				741F4CF723F48DC20074529F /* SceneDelegate.swift */,
+				741F4CFE23F48DC30074529F /* Assets.xcassets */,
+				741F4D0023F48DC30074529F /* LaunchScreen.storyboard */,
+				741F4D0323F48DC30074529F /* Info.plist */,
+				746CEEB923F48E1B008381B1 /* DinosaurView.swift */,
+				746CEEBB23F48E5E008381B1 /* Resource.swift */,
+				746CEEBD23F48E96008381B1 /* ContentView.swift */,
 			);
 			path = Dinosaurs;
 			sourceTree = "<group>";
 		};
-		742586032397C07900D34642 /* Frameworks */ = {
+		F7E4839CBC51485B1DCF8686 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				742FD5F123B1651F00D4F91A /* SwiftUI.framework */,
-				742586042397C07900D34642 /* protos.framework */,
+				E1E44CA8B772EE4AC2ED5A30 /* Pods-Dinosaurs.debug.xcconfig */,
+				FD85FE44C1A07AB2DF50B7F3 /* Pods-Dinosaurs.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		742585EB2396A37600D34642 /* Dinosaurs */ = {
+		741F4CF123F48DC20074529F /* Dinosaurs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 742586002396A37A00D34642 /* Build configuration list for PBXNativeTarget "Dinosaurs" */;
+			buildConfigurationList = 741F4D0623F48DC30074529F /* Build configuration list for PBXNativeTarget "Dinosaurs" */;
 			buildPhases = (
-				742586082397C11B00D34642 /* ShellScript */,
-				742585E82396A37600D34642 /* Sources */,
-				742585E92396A37600D34642 /* Frameworks */,
-				742585EA2396A37600D34642 /* Resources */,
-				7425860B2397C51800D34642 /* Embed Frameworks */,
+				6D8EA870BD58ED601DE1495C /* [CP] Check Pods Manifest.lock */,
+				741F4CEE23F48DC20074529F /* Sources */,
+				741F4CEF23F48DC20074529F /* Frameworks */,
+				741F4CF023F48DC20074529F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -122,25 +112,25 @@
 			);
 			name = Dinosaurs;
 			productName = Dinosaurs;
-			productReference = 742585EC2396A37600D34642 /* Dinosaurs.app */;
+			productReference = 741F4CF223F48DC20074529F /* Dinosaurs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		742585E42396A37600D34642 /* Project object */ = {
+		741F4CEA23F48DC20074529F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Square;
 				TargetAttributes = {
-					742585EB2396A37600D34642 = {
-						CreatedOnToolsVersion = 11.2.1;
+					741F4CF123F48DC20074529F = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 742585E72396A37600D34642 /* Build configuration list for PBXProject "Dinosaurs" */;
+			buildConfigurationList = 741F4CED23F48DC20074529F /* Build configuration list for PBXProject "Dinosaurs" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,30 +138,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 742585E32396A37600D34642;
-			productRefGroup = 742585ED2396A37600D34642 /* Products */;
+			mainGroup = 741F4CE923F48DC20074529F;
+			productRefGroup = 741F4CF323F48DC20074529F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				742585EB2396A37600D34642 /* Dinosaurs */,
+				741F4CF123F48DC20074529F /* Dinosaurs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		742585EA2396A37600D34642 /* Resources */ = {
+		741F4CF023F48DC20074529F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742585F92396A37A00D34642 /* Assets.xcassets in Resources */,
-				742FD5F723B1662C00D4F91A /* LaunchScreen.storyboard in Resources */,
+				741F4D0223F48DC30074529F /* LaunchScreen.storyboard in Resources */,
+				741F4CFF23F48DC30074529F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		742586082397C11B00D34642 /* ShellScript */ = {
+		6D8EA870BD58ED601DE1495C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,34 +169,50 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dinosaurs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT/../../protos/build/xcode-frameworks\"\nchmod 755 gradlew\n./gradlew :protos:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		742585E82396A37600D34642 /* Sources */ = {
+		741F4CEE23F48DC20074529F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742FD5FA23B16B4D00D4F91A /* ContentView.swift in Sources */,
-				742FD5F423B1653600D4F91A /* DinosaurView.swift in Sources */,
-				742585F02396A37600D34642 /* AppDelegate.swift in Sources */,
-				742FD60023B1914C00D4F91A /* Resource.swift in Sources */,
-				742585F22396A37600D34642 /* SceneDelegate.swift in Sources */,
+				746CEEBA23F48E1B008381B1 /* DinosaurView.swift in Sources */,
+				746CEEBE23F48E96008381B1 /* ContentView.swift in Sources */,
+				741F4CF623F48DC20074529F /* AppDelegate.swift in Sources */,
+				746CEEBC23F48E5E008381B1 /* Resource.swift in Sources */,
+				741F4CF823F48DC20074529F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		741F4D0023F48DC30074529F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				741F4D0123F48DC30074529F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		742585FE2396A37A00D34642 /* Debug */ = {
+		741F4D0423F48DC30074529F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		742585FF2396A37A00D34642 /* Release */ = {
+		741F4D0523F48DC30074529F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,12 +326,12 @@
 			};
 			name = Release;
 		};
-		742586012396A37A00D34642 /* Debug */ = {
+		741F4D0723F48DC30074529F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E44CA8B772EE4AC2ED5A30 /* Pods-Dinosaurs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../../protos/build/xcode-frameworks";
 				INFOPLIST_FILE = Dinosaurs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,12 +344,12 @@
 			};
 			name = Debug;
 		};
-		742586022396A37A00D34642 /* Release */ = {
+		741F4D0823F48DC30074529F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD85FE44C1A07AB2DF50B7F3 /* Pods-Dinosaurs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../../protos/build/xcode-frameworks";
 				INFOPLIST_FILE = Dinosaurs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,25 +365,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		742585E72396A37600D34642 /* Build configuration list for PBXProject "Dinosaurs" */ = {
+		741F4CED23F48DC20074529F /* Build configuration list for PBXProject "Dinosaurs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				742585FE2396A37A00D34642 /* Debug */,
-				742585FF2396A37A00D34642 /* Release */,
+				741F4D0423F48DC30074529F /* Debug */,
+				741F4D0523F48DC30074529F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		742586002396A37A00D34642 /* Build configuration list for PBXNativeTarget "Dinosaurs" */ = {
+		741F4D0623F48DC30074529F /* Build configuration list for PBXNativeTarget "Dinosaurs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				742586012396A37A00D34642 /* Debug */,
-				742586022396A37A00D34642 /* Release */,
+				741F4D0723F48DC30074529F /* Debug */,
+				741F4D0823F48DC30074529F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 742585E42396A37600D34642 /* Project object */;
+	rootObject = 741F4CEA23F48DC20074529F /* Project object */;
 }
