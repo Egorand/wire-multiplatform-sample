@@ -42,8 +42,8 @@ kotlin {
     iosX64("ios")
   }
   cocoapods {
-    summary = "Common core for SQLDelight sample."
-    homepage = "https://github.com/cashapp/sqldelight/tree/master/sample/common"
+    summary = "Generated protos module for Dinosaurs sample."
+    homepage = "https://github.com/Egorand/wire-multiplatform-sample/tree/master/protos"
   }
 }
 

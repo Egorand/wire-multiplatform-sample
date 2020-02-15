@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'protos'
     spec.version                  = '0.0.1'
-    spec.homepage                 = 'https://github.com/cashapp/sqldelight/tree/master/sample/common'
+    spec.homepage                 = 'https://github.com/Egorand/wire-multiplatform-sample/tree/master/protos'
     spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
     spec.authors                  = ''
     spec.license                  = ''
-    spec.summary                  = 'Common core for SQLDelight sample.'
+    spec.summary                  = 'Generated protos module for Dinosaurs sample.'
 
     spec.static_framework         = true
     spec.vendored_frameworks      = "build/cocoapods/framework/#{spec.name}.framework"
