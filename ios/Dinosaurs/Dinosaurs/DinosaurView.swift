@@ -37,8 +37,7 @@ struct DinosaurView_Previews: PreviewProvider {
   
   static func buildDinosaur() -> Dinosaur {
     let encodedDino = "CgtTdGVnb3NhdXJ1cxIUaHR0cDovL2dvby5nbC9MRDVLWTUSFGh0dHA6Ly9nb28uZ2wvVllSTTY3GQAAAAAAACJAIQAAAAAAiLNAKAI="
-    let nsData = NSData(base64Encoded: encodedDino, options: .ignoreUnknownCharacters)!
-    let dinoBytes = OkioKt.decodeBase64(base64: nsData.base64EncodedString(options: .endLineWithCarriageReturn))
-    return Dinosaur.Companion.init().ADAPTER.decode(bytes_: dinoBytes) as! Dinosaur
+    let data = NSData(base64Encoded: encodedDino, options: .ignoreUnknownCharacters)!
+    return Dinosaur.Companion.init().ADAPTER.decode(data: data as Data) as! Dinosaur
   }
 }

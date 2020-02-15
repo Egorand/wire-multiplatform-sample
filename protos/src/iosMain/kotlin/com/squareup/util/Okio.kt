@@ -1,7 +1,17 @@
 package com.squareup.util
 
-import okio.ByteString
-import okio.ByteString.Companion.decodeHex
-import okio.ByteString.Companion.decodeBase64
+import com.squareup.wire.ProtoAdapter
+import platform.Foundation.NSData
+import platform.posix.memcpy
+import kotlinx.cinterop.addressOf
+import kotlinx.cinterop.usePinned
 
-fun decodeBase64(base64: String): ByteString = base64.decodeBase64()!!
+// TODO(egorand): Move to Wire/Okio
+fun <E> ProtoAdapter<E>.decode(data: NSData): E {
+  val bytes = ByteArray(data.length.toInt()).apply {
+    usePinned { pinned ->
+      memcpy(pinned.addressOf(0), data.bytes, data.length)
+    }
+  }
+  return decode(bytes)
+}

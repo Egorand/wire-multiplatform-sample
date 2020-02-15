@@ -47,10 +47,6 @@ final class DinosaurResource: ObservableObject {
   }
   
   func toDinosaur(data: Data) -> Dinosaur {
-    let bytes = KotlinByteArray.init(size: Int32(data.count))
-    for (index, element) in data.map({ Int8(bitPattern: $0) }).enumerated() {
-      bytes.set(index: Int32(index), value: element)
-    }
-    return Dinosaur.Companion.init().ADAPTER.decode(bytes: bytes) as! Dinosaur
+    return Dinosaur.Companion.init().ADAPTER.decode(data: data) as! Dinosaur
   }
 }

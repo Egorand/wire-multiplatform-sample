@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../protos"
 
 SPEC CHECKSUMS:
-  protos: af5057e8123f0987aa994bfb68f1fb8afeeab8a3
+  protos: d791ac8ba8ff1ac408e3714775e5a8920e755fd3
 
 PODFILE CHECKSUM: 35b6eec2fee51651b5c41082d7054d9456bc7081
 
