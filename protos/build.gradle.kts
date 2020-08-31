@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Square Inc.
+ * Copyright (C) 2019 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 plugins {
-  id 'org.jetbrains.kotlin.multiplatform'
-  id 'org.jetbrains.kotlin.native.cocoapods'
-  id 'com.squareup.wire'
+  kotlin("multiplatform")
+  id("org.jetbrains.kotlin.native.cocoapods")
+  id("com.squareup.wire")
 }
 
-version = '0.0.1'
+version = "0.0.1"
 
 kotlin {
   jvm("android")
@@ -27,14 +27,14 @@ kotlin {
     commonMain {
       kotlin.srcDir("$buildDir/generated/source/wire")
       dependencies {
-        api deps.okio.multiplatform
-        api deps.wire.runtime
+        api(deps.okio)
+        api(deps.wire.runtime)
       }
     }
   }
 
   // Configure iOS.
-  def sdkName = System.getenv("SDK_NAME")
+  val sdkName = System.getenv("SDK_NAME")
   if (sdkName != null && sdkName.startsWith("iphoneos")) {
     iosArm64("ios")
   } else {

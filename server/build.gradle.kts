@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Square Inc.
+ * Copyright (C) 2019 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,5 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-include ':android', ':protos', ':server'
-rootProject.name='Dinosaurs'
+plugins {
+  kotlin("jvm")
+  application
+}
+
+application {
+  mainClass.set("io.ktor.server.netty.DevelopmentEngine")
+}
+
+dependencies {
+  implementation(project(":protos"))
+  implementation(deps.ktor)
+}
