@@ -17,16 +17,16 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
   ext.versions = [
-      'kotlin': '1.3.61',
-      'wire': '3.1.0',
-      'okio': '2.4.3',
-      'ktor': '1.3.1',
-      'retrofit': '2.7.0',
-      'coroutines': '1.3.3',
-      'contour': '0.1.5-SNAPSHOT',
+      'kotlin': '1.4.0',
+      'wire': '3.3.0-SNAPSHOT',
+      'okio': '2.8.0',
+      'ktor': '1.4.0',
+      'retrofit': '2.9.0',
+      'coroutines': '1.3.9',
+      'contour': '0.1.7',
   ]
   ext.deps = [
-      'agp': 'com.android.tools.build:gradle:3.5.2',
+      'agp': 'com.android.tools.build:gradle:4.0.1',
       'kotlin': [
           'plugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
           'stdlib': [
@@ -60,6 +60,7 @@ buildscript {
   repositories {
     google()
     jcenter()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
   }
   dependencies {
     classpath deps.agp
@@ -72,9 +73,7 @@ allprojects { project ->
   repositories {
     google()
     jcenter()
-    maven {
-      url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
   }
   project.tasks.withType(KotlinCompile).all {
     kotlinOptions.jvmTarget = "1.8"

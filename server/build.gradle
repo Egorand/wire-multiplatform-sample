@@ -20,6 +20,5 @@ mainClassName = "io.ktor.server.netty.DevelopmentEngine"
 
 dependencies {
   implementation project(':protos')
-  implementation deps.kotlin.stdlib.jdk8
   implementation deps.ktor.netty
 }

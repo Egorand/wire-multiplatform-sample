@@ -27,7 +27,6 @@ kotlin {
     commonMain {
       kotlin.srcDir("$buildDir/generated/source/wire")
       dependencies {
-        api deps.kotlin.stdlib.common
         api deps.okio.multiplatform
         api deps.wire.runtime
       }
