@@ -15,46 +15,48 @@
  */
 package com.squareup.dinosaurs
 
-import android.content.Context
-import android.widget.TextView
-import com.squareup.contour.ContourLayout
+import androidx.compose.foundation.Text
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Divider
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.Transparent
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import androidx.ui.tooling.preview.Preview
+import com.squareup.dinosaurs.ui.DinosaursTheme
+import com.squareup.dinosaurs.ui.typography
+import com.squareup.geology.Period.JURASSIC
 
-class DinosaurView(context: Context) : ContourLayout(context) {
-  private val nameView = TextView(context).apply {
-    textSize = 14.dip.toFloat()
-    applyLayout(
-        x = leftTo { parent.left() + 32.dip },
-        y = topTo { parent.top() + 32.dip }
+@Composable fun DinosaurView(dinosaur: Dinosaur) {
+  Column(modifier = Modifier.padding(32.dp)) {
+    Text(stringResource(R.string.name_template, dinosaur.name!!), style = typography.body1)
+    Divider(color = Transparent, thickness = 16.dp)
+    Text(stringResource(R.string.period_template, dinosaur.period!!.name), style = typography.body1)
+    Divider(color = Transparent, thickness = 16.dp)
+    Text(
+        stringResource(R.string.length_template, dinosaur.length_meters!!),
+        style = typography.body1
+    )
+    Divider(color = Transparent, thickness = 16.dp)
+    Text(
+        stringResource(R.string.mass_template, dinosaur.mass_kilograms!!),
+        style = typography.body1
     )
   }
-  private val periodView = TextView(context).apply {
-    textSize = 14.dip.toFloat()
-    applyLayout(
-        x = leftTo { parent.left() + 32.dip },
-        y = topTo { nameView.bottom() + 16.dip }
-    )
-  }
-  private val lengthView = TextView(context).apply {
-    textSize = 14.dip.toFloat()
-    applyLayout(
-        x = leftTo { parent.left() + 32.dip },
-        y = topTo { periodView.bottom() + 16.dip }
-    )
-  }
-  private val massView = TextView(context).apply {
-    textSize = 14.dip.toFloat()
-    applyLayout(
-        x = leftTo { parent.left() + 32.dip },
-        y = topTo { lengthView.bottom() + 16.dip }
-    )
-  }
+}
 
-  var dinosaur: Dinosaur? = null
-    set(dinosaur) {
-      requireNotNull(dinosaur)
-      nameView.text = resources.getString(R.string.name_template, dinosaur.name)
-      periodView.text = resources.getString(R.string.period_template, dinosaur.period!!.name)
-      lengthView.text = resources.getString(R.string.length_template, dinosaur.length_meters)
-      massView.text = resources.getString(R.string.mass_template, dinosaur.mass_kilograms)
-    }
+@Preview(showBackground = true)
+@Composable fun DefaultPreview() {
+  val dinosaur = Dinosaur(
+      name = "Stegosaurus",
+      period = JURASSIC,
+      length_meters = 9.0,
+      mass_kilograms = 5000.0,
+      picture_urls = listOf("http://goo.gl/LD5KY5", "http://goo.gl/VYRM67")
+  )
+  DinosaursTheme {
+    DinosaurView(dinosaur)
+  }
 }

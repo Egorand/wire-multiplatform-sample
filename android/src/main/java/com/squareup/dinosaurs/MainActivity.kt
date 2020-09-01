@@ -17,6 +17,8 @@ package com.squareup.dinosaurs
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.ui.platform.setContent
+import com.squareup.dinosaurs.ui.DinosaursTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
@@ -39,12 +41,14 @@ class MainActivity : AppCompatActivity() {
         .create(DinosaursApi::class.java)
 
     scope.launch {
-      val stegosaurusView = DinosaurView(this@MainActivity).apply {
-        dinosaur = withContext(Dispatchers.IO) {
-          dinosaursApi.getDinosaur()
+      val dinosaur = withContext(Dispatchers.IO) {
+        dinosaursApi.getDinosaur()
+      }
+      setContent {
+        DinosaursTheme {
+          DinosaurView(dinosaur)
         }
       }
-      setContentView(stegosaurusView)
     }
   }
 

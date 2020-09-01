@@ -24,13 +24,19 @@ android {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
   }
-
   defaultConfig {
     applicationId = "com.squareup.dinosaurs"
     minSdkVersion(21)
     targetSdkVersion(30)
     versionCode = 1
     versionName = "1.0"
+  }
+  buildFeatures {
+    compose = true
+  }
+  composeOptions {
+    kotlinCompilerExtensionVersion = versions.compose
+    kotlinCompilerVersion = versions.kotlin
   }
 }
 
@@ -40,6 +46,8 @@ dependencies {
   implementation(deps.coroutines.android)
   implementation(deps.retrofit.core)
   implementation(deps.retrofit.wire)
-  implementation(deps.contour)
+  implementation(deps.compose.material)
+  implementation(deps.compose.ui)
+  implementation(deps.compose.uiTooling)
   implementation(deps.appcompat)
 }

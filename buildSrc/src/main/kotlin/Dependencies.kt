@@ -23,11 +23,11 @@ object versions {
   // Server
   const val ktor = "1.4.0"
   // Android
-  const val agp = "4.0.1"
+  const val agp = "4.2.0-alpha08"
   const val appcompat = "1.1.0"
   const val coroutines = "1.3.9"
   const val retrofit = "2.9.0"
-  const val contour = "0.1.7"
+  const val compose = "1.0.0-alpha01"
 }
 
 object deps {
@@ -48,8 +48,12 @@ object deps {
     const val core = "com.squareup.retrofit2:retrofit:${versions.retrofit}"
     const val wire = "com.squareup.retrofit2:converter-wire:${versions.retrofit}"
   }
+  object compose {
+    const val ui = "androidx.compose.ui:ui:${versions.compose}"
+    const val uiTooling = "androidx.ui:ui-tooling:${versions.compose}"
+    const val material = "androidx.compose.material:material:${versions.compose}"
+  }
   const val okio = "com.squareup.okio:okio-multiplatform:${versions.okio}"
   const val ktor = "io.ktor:ktor-server-netty:${versions.ktor}"
   const val appcompat = "androidx.appcompat:appcompat:${versions.appcompat}"
-  const val contour = "app.cash.contour:contour:${versions.contour}"
 }
