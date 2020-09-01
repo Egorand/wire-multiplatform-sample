@@ -37,12 +37,12 @@ import com.squareup.geology.Period.JURASSIC
     Divider(color = Transparent, thickness = 16.dp)
     Text(
         stringResource(R.string.length_template, dinosaur.length_meters!!),
-        style = typography.body1
+        style = typography.body1,
     )
     Divider(color = Transparent, thickness = 16.dp)
     Text(
         stringResource(R.string.mass_template, dinosaur.mass_kilograms!!),
-        style = typography.body1
+        style = typography.body1,
     )
   }
 }
@@ -54,7 +54,7 @@ import com.squareup.geology.Period.JURASSIC
       period = JURASSIC,
       length_meters = 9.0,
       mass_kilograms = 5000.0,
-      picture_urls = listOf("http://goo.gl/LD5KY5", "http://goo.gl/VYRM67")
+      picture_urls = listOf("http://goo.gl/LD5KY5", "http://goo.gl/VYRM67"),
   )
   DinosaursTheme {
     DinosaurView(dinosaur)

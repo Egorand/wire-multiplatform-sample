@@ -32,7 +32,7 @@ val stegosaurus = Dinosaur(
     period = JURASSIC,
     length_meters = 9.0,
     mass_kilograms = 5000.0,
-    picture_urls = listOf("http://goo.gl/LD5KY5", "http://goo.gl/VYRM67")
+    picture_urls = listOf("http://goo.gl/LD5KY5", "http://goo.gl/VYRM67"),
 )
 
 fun Application.main() {
@@ -42,7 +42,7 @@ fun Application.main() {
       call.respondBytes(
           bytes = Dinosaur.ADAPTER.encode(stegosaurus),
           contentType = ContentType("application", "protobuf"),
-          status = HttpStatusCode.OK
+          status = HttpStatusCode.OK,
       )
     }
   }
