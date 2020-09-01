@@ -23,6 +23,8 @@ version = "0.0.1"
 
 kotlin {
   jvm("android")
+  ios()
+
   sourceSets {
     commonMain {
       kotlin.srcDir("$buildDir/generated/source/wire")
@@ -33,13 +35,6 @@ kotlin {
     }
   }
 
-  // Configure iOS.
-  val sdkName = System.getenv("SDK_NAME")
-  if (sdkName != null && sdkName.startsWith("iphoneos")) {
-    iosArm64("ios")
-  } else {
-    iosX64("ios")
-  }
   cocoapods {
     summary = "Generated protos module for Dinosaurs sample."
     homepage = "https://github.com/Egorand/wire-multiplatform-sample/tree/master/protos"
