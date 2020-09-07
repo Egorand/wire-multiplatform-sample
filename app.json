@@ -1,0 +1,5 @@
+{
+  "name": "Dinosaurs",
+  "description": "The server app for the Dinosaurs Wire sample.",
+  "image": "heroku/java"
+}
