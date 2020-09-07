@@ -15,7 +15,7 @@
  */
 plugins {
   kotlin("multiplatform")
-  id("org.jetbrains.kotlin.native.cocoapods")
+  kotlin("native.cocoapods")
   id("com.squareup.wire")
 }
 
@@ -38,6 +38,7 @@ kotlin {
   cocoapods {
     summary = "Generated protos module for Dinosaurs sample."
     homepage = "https://github.com/Egorand/wire-multiplatform-sample/tree/master/protos"
+    frameworkName = "dinosaurs_protos"
   }
 }
 

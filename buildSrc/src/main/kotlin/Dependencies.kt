@@ -23,7 +23,7 @@ object versions {
   // Server
   const val ktor = "1.4.0"
   // Android
-  const val agp = "4.2.0-alpha08"
+  const val agp = "4.2.0-alpha09"
   const val appcompat = "1.1.0"
   const val coroutines = "1.3.9"
   const val retrofit = "2.9.0"
