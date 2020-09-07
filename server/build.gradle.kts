@@ -26,6 +26,7 @@ application {
 dependencies {
   implementation(project(":protos"))
   implementation(deps.ktor)
+  implementation("ch.qos.logback:logback-classic:1.2.3")
 }
 
 tasks.withType<Jar> {

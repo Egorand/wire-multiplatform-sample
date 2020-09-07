@@ -25,8 +25,10 @@ import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.wire.WireConverterFactory
+import java.util.concurrent.TimeUnit.MINUTES
 
 class MainActivity : AppCompatActivity() {
   private val scope: CoroutineScope = MainScope()
@@ -36,6 +38,14 @@ class MainActivity : AppCompatActivity() {
 
     val dinosaursApi = Retrofit.Builder()
         .baseUrl("https://wire-dinosaurs-demo.herokuapp.com")
+        .client(
+            OkHttpClient.Builder()
+                .connectTimeout(1, MINUTES)
+                .callTimeout(1, MINUTES)
+                .readTimeout(1, MINUTES)
+                .writeTimeout(1, MINUTES)
+                .build()
+        )
         .addConverterFactory(WireConverterFactory.create())
         .build()
         .create(DinosaursApi::class.java)
