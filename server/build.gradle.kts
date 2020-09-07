@@ -16,13 +16,24 @@
 plugins {
   kotlin("jvm")
   application
+  id("com.github.johnrengelman.shadow") version "6.0.0"
 }
 
 application {
-  mainClass.set("io.ktor.server.netty.DevelopmentEngine")
+  setMainClassName("io.ktor.server.netty.DevelopmentEngine")
 }
 
 dependencies {
   implementation(project(":protos"))
   implementation(deps.ktor)
+}
+
+tasks.withType<Jar> {
+  manifest {
+    attributes(
+        mapOf(
+            "Main-Class" to application.mainClassName
+        )
+    )
+  }
 }

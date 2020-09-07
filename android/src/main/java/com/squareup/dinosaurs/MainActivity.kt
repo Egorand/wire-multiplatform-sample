@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
 
     val dinosaursApi = Retrofit.Builder()
-        .baseUrl("http://10.0.2.2:8080")
+        .baseUrl("https://wire-dinosaurs-demo.herokuapp.com")
         .addConverterFactory(WireConverterFactory.create())
         .build()
         .create(DinosaursApi::class.java)
