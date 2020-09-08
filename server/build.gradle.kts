@@ -31,10 +31,6 @@ dependencies {
 
 tasks.withType<Jar> {
   manifest {
-    attributes(
-        mapOf(
-            "Main-Class" to application.mainClassName
-        )
-    )
+    attributes(mapOf("Main-Class" to application.mainClassName))
   }
 }

@@ -23,6 +23,7 @@ import io.ktor.application.install
 import io.ktor.features.DefaultHeaders
 import io.ktor.http.ContentType
 import io.ktor.http.HttpStatusCode
+import io.ktor.response.respond
 import io.ktor.response.respondBytes
 import io.ktor.routing.get
 import io.ktor.routing.routing
@@ -38,6 +39,9 @@ val stegosaurus = Dinosaur(
 fun Application.main() {
   install(DefaultHeaders)
   routing {
+    get("/hello") {
+      call.respond("Hello there!")
+    }
     get("/dinosaur") {
       call.respondBytes(
           bytes = Dinosaur.ADAPTER.encode(stegosaurus),
