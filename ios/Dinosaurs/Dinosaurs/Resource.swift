@@ -11,7 +11,7 @@ import Foundation
 import protos
 
 final class DinosaurResource: ObservableObject {
-  let url = URL(string: "http://127.0.0.1:8080/dinosaur")!
+  let url = URL(string: "https://wire-dinosaurs-demo.herokuapp.com/dinosaur")!
   let didChange = PassthroughSubject<Dinosaur?, Never>()
   var value: Dinosaur? {
     willSet {
