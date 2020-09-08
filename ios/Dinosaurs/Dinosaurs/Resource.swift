@@ -12,17 +12,13 @@ import protos
 
 final class DinosaurResource: ObservableObject {
   let url = URL(string: "https://wire-dinosaurs-demo.herokuapp.com/dinosaur")!
-  let didChange = PassthroughSubject<Dinosaur?, Never>()
-  var value: Dinosaur? {
-    willSet {
-      DispatchQueue.main.async {
-        self.didChange.send(self.value)
-      }
-    }
-  }
+  
+  @Published var value: Dinosaur? = nil
+  
   init() {
     reload()
   }
+  
   func reload() {
     let task = URLSession.shared.dataTask(with: url) { data, response, error in
       if let clientError = error {
@@ -33,7 +29,9 @@ final class DinosaurResource: ObservableObject {
         self.handleServerError(response: response as! HTTPURLResponse)
         return
       }
-      self.value = self.toDinosaur(data: data!).freeze()
+      DispatchQueue.main.async {
+        self.value = self.toDinosaur(data: data!)
+      }
     }
     task.resume()
   }

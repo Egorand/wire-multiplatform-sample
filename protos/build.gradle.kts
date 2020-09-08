@@ -29,7 +29,6 @@ kotlin {
     commonMain {
       kotlin.srcDir("$buildDir/generated/source/wire")
       dependencies {
-        api(deps.okio)
         api(deps.wire.runtime)
       }
     }
@@ -38,7 +37,6 @@ kotlin {
   cocoapods {
     summary = "Generated protos module for Dinosaurs sample."
     homepage = "https://github.com/Egorand/wire-multiplatform-sample/tree/master/protos"
-    frameworkName = "dinosaurs_protos"
   }
 }
 

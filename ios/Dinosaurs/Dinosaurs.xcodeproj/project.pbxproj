@@ -14,6 +14,7 @@
 		746CEEBA23F48E1B008381B1 /* DinosaurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEB923F48E1B008381B1 /* DinosaurView.swift */; };
 		746CEEBC23F48E5E008381B1 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEBB23F48E5E008381B1 /* Resource.swift */; };
 		746CEEBE23F48E96008381B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CEEBD23F48E96008381B1 /* ContentView.swift */; };
+		9576CDFF6E88147D1A7B2CEF /* Pods_Dinosaurs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF928F67651422E95DFC782 /* Pods_Dinosaurs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9576CDFF6E88147D1A7B2CEF /* Pods_Dinosaurs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
