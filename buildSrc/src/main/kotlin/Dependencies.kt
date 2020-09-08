@@ -22,6 +22,7 @@ object versions {
   const val okio = "2.8.0"
   // Server
   const val ktor = "1.4.0"
+  const val shadow = "6.0.0"
   // Android
   const val agp = "4.2.0-alpha09"
   const val appcompat = "1.1.0"

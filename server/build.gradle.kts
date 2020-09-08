@@ -16,7 +16,7 @@
 plugins {
   kotlin("jvm")
   application
-  id("com.github.johnrengelman.shadow") version "6.0.0"
+  id("com.github.johnrengelman.shadow") version versions.shadow
 }
 
 application {
@@ -26,7 +26,6 @@ application {
 dependencies {
   implementation(project(":protos"))
   implementation(deps.ktor)
-  implementation("ch.qos.logback:logback-classic:1.2.3")
 }
 
 tasks.withType<Jar> {
