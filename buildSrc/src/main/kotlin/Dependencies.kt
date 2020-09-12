@@ -17,14 +17,14 @@
 
 object versions {
   // Common
-  const val kotlin = "1.4.0"
+  const val kotlin = "1.4.10"
   const val wire = "3.3.0-SNAPSHOT"
   const val okio = "2.8.0"
   // Server
   const val ktor = "1.4.0"
   const val shadow = "6.0.0"
   // Android
-  const val agp = "4.2.0-alpha09"
+  const val agp = "4.2.0-alpha10"
   const val appcompat = "1.1.0"
   const val coroutines = "1.3.9"
   const val retrofit = "2.9.0"
