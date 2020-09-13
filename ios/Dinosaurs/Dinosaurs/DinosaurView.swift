@@ -12,16 +12,16 @@ import protos
 struct DinosaurView: View {
   var body: some View {
     VStack(alignment: .leading) {
-      Text("Name: \(dinosaur.name ?? "Unknown")")
+      Text("Name: \(dinosaur.name)")
         .font(.title)
         .padding()
-      Text("Period: \(dinosaur.period?.description() ?? "Unknown")")
+      Text("Period: \(dinosaur.period.description())")
         .font(.title)
         .padding()
-      Text("Length: \(dinosaur.length_meters?.description ?? "Unknown")")
+      Text("Length: \(dinosaur.length_meters.description)")
         .font(.title)
         .padding()
-      Text("Mass: \(dinosaur.mass_kilograms?.description ?? "Unknown")")
+      Text("Mass: \(dinosaur.mass_kilograms.description)")
         .font(.title)
         .padding()
     }
