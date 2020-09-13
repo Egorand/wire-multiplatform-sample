@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-syntax = "proto2";
+syntax = "proto3";
 
 package squareup.dinosaurs;
 
@@ -23,12 +23,12 @@ import "squareup/geology/period.proto";
 
 message Dinosaur {
   /** Common name of this dinosaur, like "Stegosaurus". */
-  optional string name = 1;
+  string name = 1;
 
   /** URLs with images of this dinosaur. */
   repeated string picture_urls = 2;
 
-  optional double length_meters = 3;
-  optional double mass_kilograms = 4;
-  optional squareup.geology.Period period = 5;
+  double length_meters = 3;
+  double mass_kilograms = 4;
+  squareup.geology.Period period = 5;
 }

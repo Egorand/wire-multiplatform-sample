@@ -13,13 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-syntax = "proto2";
+syntax = "proto3";
 
 package squareup.geology;
 
 option java_package = "com.squareup.geology";
 
 enum Period {
+  /** Period undefined. */
+  UNKNOWN = 0;
+
   /** 145.5 million years ago — 66.0 million years ago. */
   CRETACEOUS = 1;
 
