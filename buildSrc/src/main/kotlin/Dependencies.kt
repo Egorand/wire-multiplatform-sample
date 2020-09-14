@@ -18,7 +18,7 @@
 object versions {
   // Common
   const val kotlin = "1.4.10"
-  const val wire = "3.3.0-SNAPSHOT"
+  const val wire = "3.3.0"
   const val okio = "2.8.0"
   // Server
   const val ktor = "1.4.0"

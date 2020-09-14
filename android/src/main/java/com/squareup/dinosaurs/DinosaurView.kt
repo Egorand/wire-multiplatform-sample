@@ -31,17 +31,17 @@ import com.squareup.geology.Period.JURASSIC
 
 @Composable fun DinosaurView(dinosaur: Dinosaur) {
   Column(modifier = Modifier.padding(32.dp)) {
-    Text(stringResource(R.string.name_template, dinosaur.name!!), style = typography.body1)
+    Text(stringResource(R.string.name_template, dinosaur.name), style = typography.body1)
     Divider(color = Transparent, thickness = 16.dp)
-    Text(stringResource(R.string.period_template, dinosaur.period!!.name), style = typography.body1)
+    Text(stringResource(R.string.period_template, dinosaur.period.name), style = typography.body1)
     Divider(color = Transparent, thickness = 16.dp)
     Text(
-        stringResource(R.string.length_template, dinosaur.length_meters!!),
+        stringResource(R.string.length_template, dinosaur.length_meters),
         style = typography.body1,
     )
     Divider(color = Transparent, thickness = 16.dp)
     Text(
-        stringResource(R.string.mass_template, dinosaur.mass_kilograms!!),
+        stringResource(R.string.mass_template, dinosaur.mass_kilograms),
         style = typography.body1,
     )
   }

@@ -24,7 +24,6 @@ buildscript {
   repositories {
     jcenter()
     google()
-    maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
   }
 }
 
@@ -32,7 +31,6 @@ subprojects {
   repositories {
     jcenter()
     google()
-    maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
   }
   tasks.withType<KotlinCompile> {
     kotlinOptions {
