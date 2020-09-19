@@ -22,7 +22,7 @@ plugins {
 version = "0.0.1"
 
 kotlin {
-  jvm("android")
+  jvm()
   ios()
 
   sourceSets {
