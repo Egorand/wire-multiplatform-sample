@@ -25,7 +25,7 @@ application {
 
 dependencies {
   implementation(project(":protos"))
-  implementation(deps.ktor)
+  implementation(deps.ktor.netty)
 }
 
 tasks.withType<Jar> {

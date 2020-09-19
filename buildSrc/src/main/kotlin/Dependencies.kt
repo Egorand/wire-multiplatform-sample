@@ -52,6 +52,8 @@ object deps {
     const val uiTooling = "androidx.ui:ui-tooling:${versions.compose}"
     const val material = "androidx.compose.material:material:${versions.compose}"
   }
-  const val ktor = "io.ktor:ktor-server-netty:${versions.ktor}"
+  object ktor {
+    const val netty = "io.ktor:ktor-server-netty:${versions.ktor}"
+  }
   const val appcompat = "androidx.appcompat:appcompat:${versions.appcompat}"
 }
