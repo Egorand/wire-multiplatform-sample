@@ -19,12 +19,11 @@ object versions {
   // Common
   const val kotlin = "1.4.10"
   const val wire = "3.3.0"
-  const val okio = "2.8.0"
   // Server
   const val ktor = "1.4.0"
   const val shadow = "6.0.0"
   // Android
-  const val agp = "4.2.0-alpha10"
+  const val agp = "4.2.0-alpha11"
   const val appcompat = "1.1.0"
   const val coroutines = "1.3.9"
   const val retrofit = "2.9.0"
@@ -43,7 +42,6 @@ object deps {
   }
   object wire {
     const val runtime = "com.squareup.wire:wire-runtime-multiplatform:${versions.wire}"
-    const val compiler = "com.squareup.wire:wire-compiler:${versions.wire}"
   }
   object retrofit {
     const val core = "com.squareup.retrofit2:retrofit:${versions.retrofit}"
@@ -54,7 +52,6 @@ object deps {
     const val uiTooling = "androidx.ui:ui-tooling:${versions.compose}"
     const val material = "androidx.compose.material:material:${versions.compose}"
   }
-  const val okio = "com.squareup.okio:okio-multiplatform:${versions.okio}"
   const val ktor = "io.ktor:ktor-server-netty:${versions.ktor}"
   const val appcompat = "androidx.appcompat:appcompat:${versions.appcompat}"
 }
